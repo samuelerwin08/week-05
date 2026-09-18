@@ -7,7 +7,7 @@
 <body>
     <h1>Data Diri</h1>
 
-    <fieldset>
+    <!-- Tetap wajib menggunakan tag <form> agar tombol submit bisa pindah halaman -->
     <form action="terima.html" method="GET">
         <label for="nama">Nama</label>
         <input type="text" id="nama" name="nama" placeholder="Samuel Erwin"><br>
@@ -24,33 +24,25 @@
         <label for="surel">Alamat email</label>
         <input type="email" id="surel" name="surel" placeholder="istts@gmail.com"><br>
 
-         <label for="ultah">Tanggal Lahir</label>
-        <input type="date" id="ultah" name="ultah"><br>
-
         <label for="telp">Nomor telp</label>
         <input type="tel" id="telp" name="telp" placeholder="08xxxxxxx"><br>
-    </fieldset>
+
         <br><br>
         <label>Jenis Kelamin</label><br>
         <fieldset id="gender">
-            <input type="radio" id="lk" name="gender" value="L">
-            <label for="lk">Laki-Laki</label><br>
-
-            <input type="radio" id="pr" name="gender" value="P">
-            <label for="pr">Perempuan</label><br>
-
-            <input type="radio" id="tb" name="gender" value="X" checked>
-            <label for="tb">Tersembunyi</label><br>
+            <input type="radio" id="lk" name="gender" value="L"><label for="lk">Laki-Laki</label></radio><br>
+            <input type="radio" id="pr" name="gender" value="P"><label for="pr">Perempuan</label></radio><br>
+            <input type="radio" id="tb" name="gender" value="X" checked><label for="tb">Tersembunyi</label></radio><br>
         </fieldset>
 
+        <br><br>
         <label>Bisa apa saja?</label><br>
         <fieldset id="kemampuan">
             <input type="checkbox" id="phs" name="kemampuan" value="PS">
             <label for="phs">Photoshop</label><br>
 
             <input type="checkbox" id="ail" name="kemampuan" value="AI">
-            <label for="ail">Ilustrator</label><br>
-
+            <label for="ail">Illustrator</label><br>
         </fieldset>
 
         <br><br>
